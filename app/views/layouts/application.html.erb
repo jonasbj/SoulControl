@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" data-ng-app="MetronicApp">
+<head>
+  <title data-ng-bind="'Soul Control | ' + $state.current.data.pageTitle"></title>
+  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+  <%= csrf_meta_tags %>
+
+  <!-- BEGIN GLOBAL MANDATORY STYLES -->
+  <%= stylesheet_link_tag 'global/plugins/font-awesome/css/font-awesome.min' %>
+  <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700&subset=all" rel="stylesheet" type="text/css"/>
+  <%= stylesheet_link_tag 'global/plugins/font-awesome/css/font-awesome.min' %>
+  <%= stylesheet_link_tag 'global/plugins/simple-line-icons/simple-line-icons.min' %>
+  <%= stylesheet_link_tag 'global/plugins/bootstrap/css/bootstrap.min' %>
+  <%= stylesheet_link_tag 'global/plugins/uniform/css/uniform.default' %>
+  <!-- END GLOBAL MANDATORY STYLES -->
+
+  <!-- BEGIN DYMANICLY LOADED CSS FILES(all plugin and page related styles must be loaded between GLOBAL and THEME css files ) -->
+  <link id="ng_load_plugins_before"/>
+  <!-- END DYMANICLY LOADED CSS FILES -->
+
+  <!-- BEGIN THEME STYLES -->
+  <!-- DOC: To use 'rounded corners' style just load 'components-rounded.css' stylesheet instead of 'components.css' in the below style tag -->
+  <%= stylesheet_link_tag 'global/css/components-md' %>
+  <%= stylesheet_link_tag 'global/css/plugins-md' %>
+  <%= stylesheet_link_tag 'admin/layout/css/layout' %>
+  <%= stylesheet_link_tag 'admin/layout/css/themes/light' %>
+  <%= stylesheet_link_tag 'admin/layout/css/custom' %>
+  <%= stylesheet_link_tag 'admin/pages/css/login2' %>
+  <!-- END THEME STYLES -->
+
+  <link rel="shortcut icon" href="favicon.ico"/>
+
+
+</head>
+<body>
+
+<% if notice %>
+    <p class="alert alert-success"><%= notice %></p>
+<% end %>
+<% if alert %>
+    <p class="alert alert-danger"><%= alert %></p>
+<% end %>
+
+<%= yield %>
+
+</body>
+</html>
