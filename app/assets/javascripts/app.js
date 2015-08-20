@@ -579,6 +579,30 @@ MetronicApp.config(['$stateProvider', '$urlRouterProvider', function($stateProvi
             }
         })
 
+
+        // Artist New
+        .state("artist_new", {
+            url: "/artists/new.html",
+            templateUrl: "views/new.html",
+            data: {pageTitle: 'NEW Fucking Artist', pageSubTitle: 'artist fisk'},
+            controller: "GeneralPageController",
+            resolve: {
+                deps: ['$ocLazyLoad', function($ocLazyLoad) {
+                    return $ocLazyLoad.load({
+                        name: 'MetronicApp',
+                        insertBefore: '#ng_load_plugins_before', // load the above css files before '#ng_load_plugins_before'
+                        files: [
+                            'assets/global/plugins/bootstrap-fileinput/bootstrap-fileinput.css',
+                            'assets/admin/pages/css/profile.css',
+                            'assets/admin/pages/css/tasks.css'
+
+
+                        ]
+                    });
+                }]
+            }
+        })
+
 }]);
 
 /* Init global settings and run the app */
