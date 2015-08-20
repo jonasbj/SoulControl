@@ -72200,3 +72200,1167 @@ Started GET "/assets/admin/layout/img/sidebar-toggle-light.png" for 127.0.0.1 at
 
 
 Started GET "/assets/global/plugins/simple-line-icons/fonts/Simple-Line-Icons.woff" for 127.0.0.1 at 2015-08-20 23:26:21 +0200
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-20 23:45:11 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mUser Load (2.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 2 ORDER BY "users"."id" ASC LIMIT 1
+Processing by SoulcontrolController#index as HTML
+  Rendered soulcontrol/tpl/_header.html.erb (1.6ms)
+  Rendered soulcontrol/tpl/_sidebar.html.erb (183250.9ms)
+  Rendered soulcontrol/index.html.erb within layouts/application (183259.8ms)
+Completed 500 Internal Server Error in 183267ms
+
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    20: 			<span class="arrow "></span>
+    21: 			</a>
+    22: 			<ul class="sub-menu">
+    23: 				<li>
+    24: 					<a href="#artist.html">
+    25: 					<i></i>Atlanter</span>
+    26: 					</a>
+  app/views/soulcontrol/tpl/_sidebar.html.erb:23:in `_app_views_soulcontrol_tpl__sidebar_html_erb___1035178793976730428_70117982220720'
+  app/views/soulcontrol/index.html.erb:24:in `_app_views_soulcontrol_index_html_erb___2834829021340412290_70117974444060'
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.2ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.8ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (17.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-20 23:48:22 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mUser Load (2.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 2 ORDER BY "users"."id" ASC LIMIT 1
+Processing by SoulcontrolController#index as HTML
+  Rendered soulcontrol/tpl/_header.html.erb (2.4ms)
+  Rendered soulcontrol/tpl/_sidebar.html.erb (0.5ms)
+  Rendered soulcontrol/index.html.erb within layouts/application (192.2ms)
+Completed 200 OK in 433ms (Views: 432.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-08-20 23:48:23 +0200
+
+
+Started GET "/assets/areas.css?body=1" for 127.0.0.1 at 2015-08-20 23:48:23 +0200
+
+
+Started GET "/assets/artists.css?body=1" for 127.0.0.1 at 2015-08-20 23:48:23 +0200
+
+
+Started GET "/assets/companies.css?body=1" for 127.0.0.1 at 2015-08-20 23:48:23 +0200
+
+
+Started GET "/assets/countries.css?body=1" for 127.0.0.1 at 2015-08-20 23:48:23 +0200
+
+
+Started GET "/assets/event_user_statuses.css?body=1" for 127.0.0.1 at 2015-08-20 23:48:23 +0200
+
+
+Started GET "/assets/events.css?body=1" for 127.0.0.1 at 2015-08-20 23:48:23 +0200
+
+
+Started GET "/assets/locations.css?body=1" for 127.0.0.1 at 2015-08-20 23:48:23 +0200
+
+
+Started GET "/assets/roles.css?body=1" for 127.0.0.1 at 2015-08-20 23:48:23 +0200
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-08-20 23:48:23 +0200
+
+
+Started GET "/assets/statuses.css?body=1" for 127.0.0.1 at 2015-08-20 23:48:23 +0200
+
+
+Started GET "/assets/tours.css?body=1" for 127.0.0.1 at 2015-08-20 23:48:23 +0200
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-08-20 23:48:23 +0200
+
+
+Started GET "/assets/venue_roles.css?body=1" for 127.0.0.1 at 2015-08-20 23:48:23 +0200
+
+
+Started GET "/assets/venue_users.css?body=1" for 127.0.0.1 at 2015-08-20 23:48:23 +0200
+
+
+Started GET "/assets/venues.css?body=1" for 127.0.0.1 at 2015-08-20 23:48:23 +0200
+
+
+Started GET "/assets/global/plugins/font-awesome/css/font-awesome.min.css?body=1" for 127.0.0.1 at 2015-08-20 23:48:23 +0200
+
+
+Started GET "/assets/global/plugins/simple-line-icons/simple-line-icons.min.css?body=1" for 127.0.0.1 at 2015-08-20 23:48:23 +0200
+
+
+Started GET "/assets/global/plugins/bootstrap/css/bootstrap.min.css?body=1" for 127.0.0.1 at 2015-08-20 23:48:23 +0200
+
+
+Started GET "/assets/global/plugins/uniform/css/uniform.default.css?body=1" for 127.0.0.1 at 2015-08-20 23:48:23 +0200
+
+
+Started GET "/assets/global/css/components-md.css?body=1" for 127.0.0.1 at 2015-08-20 23:48:23 +0200
+
+
+Started GET "/assets/global/css/plugins-md.css?body=1" for 127.0.0.1 at 2015-08-20 23:48:23 +0200
+
+
+Started GET "/assets/admin/layout/css/layout.css?body=1" for 127.0.0.1 at 2015-08-20 23:48:23 +0200
+
+
+Started GET "/assets/admin/layout/css/themes/light.css?body=1" for 127.0.0.1 at 2015-08-20 23:48:23 +0200
+
+
+Started GET "/assets/admin/layout/css/custom.css?body=1" for 127.0.0.1 at 2015-08-20 23:48:23 +0200
+
+
+Started GET "/assets/admin/pages/css/login2.css?body=1" for 127.0.0.1 at 2015-08-20 23:48:23 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-08-20 23:48:23 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-08-20 23:48:23 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-08-20 23:48:23 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-08-20 23:48:23 +0200
+
+
+Started GET "/assets/global/plugins/jquery.min.js?body=1" for 127.0.0.1 at 2015-08-20 23:48:23 +0200
+
+
+Started GET "/assets/global/plugins/jquery-migrate.min.js?body=1" for 127.0.0.1 at 2015-08-20 23:48:23 +0200
+
+
+Started GET "/assets/global/plugins/bootstrap/js/bootstrap.min.js?body=1" for 127.0.0.1 at 2015-08-20 23:48:23 +0200
+
+
+Started GET "/assets/global/plugins/bootstrap-hover-dropdown/bootstrap-hover-dropdown.min.js?body=1" for 127.0.0.1 at 2015-08-20 23:48:23 +0200
+
+
+Started GET "/assets/global/plugins/jquery-slimscroll/jquery.slimscroll.min.js?body=1" for 127.0.0.1 at 2015-08-20 23:48:24 +0200
+
+
+Started GET "/assets/global/plugins/jquery.blockui.min.js?body=1" for 127.0.0.1 at 2015-08-20 23:48:24 +0200
+
+
+Started GET "/assets/global/plugins/jquery.cokie.min.js?body=1" for 127.0.0.1 at 2015-08-20 23:48:24 +0200
+
+
+Started GET "/assets/global/plugins/uniform/jquery.uniform.min.js?body=1" for 127.0.0.1 at 2015-08-20 23:48:24 +0200
+
+
+Started GET "/assets/global/plugins/angularjs/angular.min.js?body=1" for 127.0.0.1 at 2015-08-20 23:48:24 +0200
+
+
+Started GET "/assets/global/plugins/angularjs/angular-sanitize.min.js?body=1" for 127.0.0.1 at 2015-08-20 23:48:24 +0200
+
+
+Started GET "/assets/global/plugins/angularjs/angular-touch.min.js?body=1" for 127.0.0.1 at 2015-08-20 23:48:24 +0200
+
+
+Started GET "/assets/global/plugins/angularjs/plugins/angular-ui-router.min.js?body=1" for 127.0.0.1 at 2015-08-20 23:48:24 +0200
+
+
+Started GET "/assets/global/plugins/angularjs/plugins/ocLazyLoad.min.js?body=1" for 127.0.0.1 at 2015-08-20 23:48:24 +0200
+
+
+Started GET "/assets/global/plugins/angularjs/plugins/ui-bootstrap-tpls.min.js?body=1" for 127.0.0.1 at 2015-08-20 23:48:24 +0200
+
+
+Started GET "/assets/app.js?body=1" for 127.0.0.1 at 2015-08-20 23:48:24 +0200
+
+
+Started GET "/assets/directives.js?body=1" for 127.0.0.1 at 2015-08-20 23:48:24 +0200
+
+
+Started GET "/assets/global/scripts/metronic.js?body=1" for 127.0.0.1 at 2015-08-20 23:48:24 +0200
+
+
+Started GET "/assets/admin/layout/scripts/layout.js?body=1" for 127.0.0.1 at 2015-08-20 23:48:24 +0200
+
+
+Started GET "/assets/admin/layout/scripts/demo.js?body=1" for 127.0.0.1 at 2015-08-20 23:48:24 +0200
+
+
+Started GET "/assets/admin/layout/img/logo.png" for 127.0.0.1 at 2015-08-20 23:48:24 +0200
+
+
+Started GET "/assets/admin/layout/img/avatar/jonasbarsten.jpg" for 127.0.0.1 at 2015-08-20 23:48:24 +0200
+
+
+Started GET "/assets/admin/layout/img/avatar/anitawisloff.jpg" for 127.0.0.1 at 2015-08-20 23:48:24 +0200
+
+
+Started GET "/assets/global/plugins/angularjs/angular-sanitize.min.js.map" for 127.0.0.1 at 2015-08-20 23:48:24 +0200
+
+
+Started GET "/assets/global/plugins/angularjs/angular-touch.min.js.map" for 127.0.0.1 at 2015-08-20 23:48:24 +0200
+
+
+Started GET "/assets/global/plugins/morris/morris.css" for 127.0.0.1 at 2015-08-20 23:48:24 +0200
+
+
+Started GET "/assets/admin/pages/css/tasks.css" for 127.0.0.1 at 2015-08-20 23:48:24 +0200
+
+
+Started GET "/assets/global/plugins/morris/morris.min.js" for 127.0.0.1 at 2015-08-20 23:48:24 +0200
+
+
+Started GET "/assets/global/plugins/morris/raphael-min.js" for 127.0.0.1 at 2015-08-20 23:48:24 +0200
+
+
+Started GET "/assets/global/plugins/jquery.sparkline.min.js" for 127.0.0.1 at 2015-08-20 23:48:24 +0200
+
+
+Started GET "/assets/admin/pages/scripts/index3.js" for 127.0.0.1 at 2015-08-20 23:48:24 +0200
+
+
+Started GET "/assets/admin/pages/scripts/tasks.js" for 127.0.0.1 at 2015-08-20 23:48:24 +0200
+
+
+Started GET "/assets/controllers/DashboardController.js" for 127.0.0.1 at 2015-08-20 23:48:24 +0200
+
+
+Started GET "/assets/admin/layout/img/sidebar-toggle-light.png" for 127.0.0.1 at 2015-08-20 23:48:24 +0200
+
+
+Started GET "/assets/global/plugins/simple-line-icons/fonts/Simple-Line-Icons.woff" for 127.0.0.1 at 2015-08-20 23:48:24 +0200
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-20 23:49:16 +0200
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 2 ORDER BY "users"."id" ASC LIMIT 1[0m
+Processing by SoulcontrolController#index as HTML
+  Rendered soulcontrol/tpl/_header.html.erb (1.6ms)
+  Rendered soulcontrol/tpl/_sidebar.html.erb (0.1ms)
+  Rendered soulcontrol/index.html.erb within layouts/application (15.8ms)
+Completed 200 OK in 31ms (Views: 30.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/countries.css?body=1" for 127.0.0.1 at 2015-08-20 23:49:17 +0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-08-20 23:49:17 +0200
+
+
+Started GET "/assets/areas.css?body=1" for 127.0.0.1 at 2015-08-20 23:49:17 +0200
+
+
+Started GET "/assets/companies.css?body=1" for 127.0.0.1 at 2015-08-20 23:49:17 +0200
+
+
+Started GET "/assets/artists.css?body=1" for 127.0.0.1 at 2015-08-20 23:49:17 +0200
+
+
+Started GET "/assets/event_user_statuses.css?body=1" for 127.0.0.1 at 2015-08-20 23:49:17 +0200
+
+
+Started GET "/assets/events.css?body=1" for 127.0.0.1 at 2015-08-20 23:49:17 +0200
+
+
+Started GET "/assets/roles.css?body=1" for 127.0.0.1 at 2015-08-20 23:49:17 +0200
+
+
+Started GET "/assets/statuses.css?body=1" for 127.0.0.1 at 2015-08-20 23:49:17 +0200
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-08-20 23:49:17 +0200
+
+
+Started GET "/assets/venue_users.css?body=1" for 127.0.0.1 at 2015-08-20 23:49:17 +0200
+
+
+Started GET "/assets/global/plugins/font-awesome/css/font-awesome.min.css?body=1" for 127.0.0.1 at 2015-08-20 23:49:17 +0200
+
+
+Started GET "/assets/global/plugins/bootstrap/css/bootstrap.min.css?body=1" for 127.0.0.1 at 2015-08-20 23:49:17 +0200
+
+
+Started GET "/assets/admin/layout/css/layout.css?body=1" for 127.0.0.1 at 2015-08-20 23:49:17 +0200
+
+
+Started GET "/assets/admin/layout/css/custom.css?body=1" for 127.0.0.1 at 2015-08-20 23:49:17 +0200
+
+
+Started GET "/assets/global/css/components-md.css?body=1" for 127.0.0.1 at 2015-08-20 23:49:17 +0200
+
+
+Started GET "/assets/locations.css?body=1" for 127.0.0.1 at 2015-08-20 23:49:17 +0200
+
+
+Started GET "/assets/tours.css?body=1" for 127.0.0.1 at 2015-08-20 23:49:17 +0200
+
+
+Started GET "/assets/venues.css?body=1" for 127.0.0.1 at 2015-08-20 23:49:17 +0200
+
+
+Started GET "/assets/global/plugins/uniform/css/uniform.default.css?body=1" for 127.0.0.1 at 2015-08-20 23:49:17 +0200
+
+
+Started GET "/assets/admin/layout/css/themes/light.css?body=1" for 127.0.0.1 at 2015-08-20 23:49:17 +0200
+
+
+Started GET "/assets/global/plugins/simple-line-icons/simple-line-icons.min.css?body=1" for 127.0.0.1 at 2015-08-20 23:49:17 +0200
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-08-20 23:49:17 +0200
+
+
+Started GET "/assets/admin/pages/css/login2.css?body=1" for 127.0.0.1 at 2015-08-20 23:49:17 +0200
+
+
+Started GET "/assets/global/css/plugins-md.css?body=1" for 127.0.0.1 at 2015-08-20 23:49:17 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-08-20 23:49:17 +0200
+
+
+Started GET "/assets/venue_roles.css?body=1" for 127.0.0.1 at 2015-08-20 23:49:17 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-08-20 23:49:17 +0200
+
+
+Started GET "/assets/global/plugins/jquery-migrate.min.js?body=1" for 127.0.0.1 at 2015-08-20 23:49:17 +0200
+
+
+Started GET "/assets/global/plugins/bootstrap-hover-dropdown/bootstrap-hover-dropdown.min.js?body=1" for 127.0.0.1 at 2015-08-20 23:49:17 +0200
+
+
+Started GET "/assets/global/plugins/jquery.blockui.min.js?body=1" for 127.0.0.1 at 2015-08-20 23:49:17 +0200
+
+
+Started GET "/assets/global/plugins/uniform/jquery.uniform.min.js?body=1" for 127.0.0.1 at 2015-08-20 23:49:17 +0200
+
+
+Started GET "/assets/global/plugins/angularjs/angular-sanitize.min.js?body=1" for 127.0.0.1 at 2015-08-20 23:49:17 +0200
+
+
+Started GET "/assets/global/plugins/angularjs/plugins/angular-ui-router.min.js?body=1" for 127.0.0.1 at 2015-08-20 23:49:17 +0200
+
+
+Started GET "/assets/global/plugins/angularjs/plugins/ui-bootstrap-tpls.min.js?body=1" for 127.0.0.1 at 2015-08-20 23:49:17 +0200
+
+
+Started GET "/assets/directives.js?body=1" for 127.0.0.1 at 2015-08-20 23:49:17 +0200
+
+
+Started GET "/assets/admin/layout/scripts/layout.js?body=1" for 127.0.0.1 at 2015-08-20 23:49:17 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-08-20 23:49:17 +0200
+
+
+Started GET "/assets/global/plugins/jquery.min.js?body=1" for 127.0.0.1 at 2015-08-20 23:49:17 +0200
+
+
+Started GET "/assets/global/plugins/jquery-slimscroll/jquery.slimscroll.min.js?body=1" for 127.0.0.1 at 2015-08-20 23:49:17 +0200
+
+
+Started GET "/assets/global/plugins/angularjs/angular.min.js?body=1" for 127.0.0.1 at 2015-08-20 23:49:17 +0200
+
+
+Started GET "/assets/global/plugins/angularjs/plugins/ocLazyLoad.min.js?body=1" for 127.0.0.1 at 2015-08-20 23:49:17 +0200
+
+
+Started GET "/assets/global/scripts/metronic.js?body=1" for 127.0.0.1 at 2015-08-20 23:49:17 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-08-20 23:49:17 +0200
+
+
+Started GET "/assets/global/plugins/jquery.cokie.min.js?body=1" for 127.0.0.1 at 2015-08-20 23:49:17 +0200
+
+
+Started GET "/assets/app.js?body=1" for 127.0.0.1 at 2015-08-20 23:49:17 +0200
+
+
+Started GET "/assets/global/plugins/bootstrap/js/bootstrap.min.js?body=1" for 127.0.0.1 at 2015-08-20 23:49:17 +0200
+
+
+Started GET "/assets/admin/layout/scripts/demo.js?body=1" for 127.0.0.1 at 2015-08-20 23:49:17 +0200
+
+
+Started GET "/assets/global/plugins/angularjs/angular-touch.min.js?body=1" for 127.0.0.1 at 2015-08-20 23:49:17 +0200
+
+
+Started GET "/assets/admin/layout/img/avatar/jonasbarsten.jpg" for 127.0.0.1 at 2015-08-20 23:49:17 +0200
+
+
+Started GET "/assets/admin/layout/img/logo.png" for 127.0.0.1 at 2015-08-20 23:49:17 +0200
+
+
+Started GET "/assets/admin/layout/img/avatar/anitawisloff.jpg" for 127.0.0.1 at 2015-08-20 23:49:17 +0200
+
+
+Started GET "/assets/admin/pages/css/tasks.css" for 127.0.0.1 at 2015-08-20 23:49:17 +0200
+
+
+Started GET "/assets/global/plugins/jquery.sparkline.min.js" for 127.0.0.1 at 2015-08-20 23:49:17 +0200
+
+
+Started GET "/assets/global/plugins/morris/morris.css" for 127.0.0.1 at 2015-08-20 23:49:17 +0200
+
+
+Started GET "/assets/global/plugins/morris/morris.min.js" for 127.0.0.1 at 2015-08-20 23:49:17 +0200
+
+
+Started GET "/assets/global/plugins/morris/raphael-min.js" for 127.0.0.1 at 2015-08-20 23:49:17 +0200
+
+
+Started GET "/assets/admin/pages/scripts/index3.js" for 127.0.0.1 at 2015-08-20 23:49:17 +0200
+
+
+Started GET "/assets/admin/pages/scripts/tasks.js" for 127.0.0.1 at 2015-08-20 23:49:17 +0200
+
+
+Started GET "/assets/controllers/DashboardController.js" for 127.0.0.1 at 2015-08-20 23:49:17 +0200
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-20 23:49:33 +0200
+  [1m[35mUser Load (1.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 2 ORDER BY "users"."id" ASC LIMIT 1
+Processing by SoulcontrolController#index as HTML
+  Rendered soulcontrol/tpl/_header.html.erb (1.2ms)
+  Rendered soulcontrol/tpl/_sidebar.html.erb (0.0ms)
+  Rendered soulcontrol/index.html.erb within layouts/application (17.4ms)
+Completed 200 OK in 85ms (Views: 84.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/artists.css?body=1" for 127.0.0.1 at 2015-08-20 23:49:34 +0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-08-20 23:49:34 +0200
+
+
+Started GET "/assets/companies.css?body=1" for 127.0.0.1 at 2015-08-20 23:49:34 +0200
+
+
+Started GET "/assets/areas.css?body=1" for 127.0.0.1 at 2015-08-20 23:49:34 +0200
+
+
+Started GET "/assets/countries.css?body=1" for 127.0.0.1 at 2015-08-20 23:49:34 +0200
+
+
+Started GET "/assets/event_user_statuses.css?body=1" for 127.0.0.1 at 2015-08-20 23:49:34 +0200
+
+
+Started GET "/assets/events.css?body=1" for 127.0.0.1 at 2015-08-20 23:49:34 +0200
+
+
+Started GET "/assets/roles.css?body=1" for 127.0.0.1 at 2015-08-20 23:49:34 +0200
+
+
+Started GET "/assets/statuses.css?body=1" for 127.0.0.1 at 2015-08-20 23:49:34 +0200
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-08-20 23:49:34 +0200
+
+
+Started GET "/assets/venue_users.css?body=1" for 127.0.0.1 at 2015-08-20 23:49:34 +0200
+
+
+Started GET "/assets/global/plugins/font-awesome/css/font-awesome.min.css?body=1" for 127.0.0.1 at 2015-08-20 23:49:34 +0200
+
+
+Started GET "/assets/global/plugins/simple-line-icons/simple-line-icons.min.css?body=1" for 127.0.0.1 at 2015-08-20 23:49:34 +0200
+
+
+Started GET "/assets/admin/layout/css/layout.css?body=1" for 127.0.0.1 at 2015-08-20 23:49:34 +0200
+
+
+Started GET "/assets/global/css/components-md.css?body=1" for 127.0.0.1 at 2015-08-20 23:49:34 +0200
+
+
+Started GET "/assets/locations.css?body=1" for 127.0.0.1 at 2015-08-20 23:49:34 +0200
+
+
+Started GET "/assets/admin/layout/css/custom.css?body=1" for 127.0.0.1 at 2015-08-20 23:49:34 +0200
+
+
+Started GET "/assets/tours.css?body=1" for 127.0.0.1 at 2015-08-20 23:49:34 +0200
+
+
+Started GET "/assets/venues.css?body=1" for 127.0.0.1 at 2015-08-20 23:49:34 +0200
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-08-20 23:49:34 +0200
+
+
+Started GET "/assets/global/plugins/uniform/css/uniform.default.css?body=1" for 127.0.0.1 at 2015-08-20 23:49:34 +0200
+
+
+Started GET "/assets/global/plugins/bootstrap/css/bootstrap.min.css?body=1" for 127.0.0.1 at 2015-08-20 23:49:34 +0200
+
+
+Started GET "/assets/admin/pages/css/login2.css?body=1" for 127.0.0.1 at 2015-08-20 23:49:34 +0200
+
+
+Started GET "/assets/admin/layout/css/themes/light.css?body=1" for 127.0.0.1 at 2015-08-20 23:49:34 +0200
+
+
+Started GET "/assets/global/css/plugins-md.css?body=1" for 127.0.0.1 at 2015-08-20 23:49:34 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-08-20 23:49:34 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-08-20 23:49:34 +0200
+
+
+Started GET "/assets/global/plugins/jquery-migrate.min.js?body=1" for 127.0.0.1 at 2015-08-20 23:49:34 +0200
+
+
+Started GET "/assets/global/plugins/bootstrap-hover-dropdown/bootstrap-hover-dropdown.min.js?body=1" for 127.0.0.1 at 2015-08-20 23:49:34 +0200
+
+
+Started GET "/assets/venue_roles.css?body=1" for 127.0.0.1 at 2015-08-20 23:49:34 +0200
+
+
+Started GET "/assets/global/plugins/jquery.blockui.min.js?body=1" for 127.0.0.1 at 2015-08-20 23:49:34 +0200
+
+
+Started GET "/assets/global/plugins/uniform/jquery.uniform.min.js?body=1" for 127.0.0.1 at 2015-08-20 23:49:34 +0200
+
+
+Started GET "/assets/global/plugins/angularjs/angular-sanitize.min.js?body=1" for 127.0.0.1 at 2015-08-20 23:49:34 +0200
+
+
+Started GET "/assets/global/plugins/angularjs/plugins/ui-bootstrap-tpls.min.js?body=1" for 127.0.0.1 at 2015-08-20 23:49:34 +0200
+
+
+Started GET "/assets/directives.js?body=1" for 127.0.0.1 at 2015-08-20 23:49:34 +0200
+
+
+Started GET "/assets/global/plugins/angularjs/plugins/angular-ui-router.min.js?body=1" for 127.0.0.1 at 2015-08-20 23:49:34 +0200
+
+
+Started GET "/assets/admin/layout/scripts/layout.js?body=1" for 127.0.0.1 at 2015-08-20 23:49:34 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-08-20 23:49:34 +0200
+
+
+Started GET "/assets/global/plugins/jquery.min.js?body=1" for 127.0.0.1 at 2015-08-20 23:49:34 +0200
+
+
+Started GET "/assets/global/plugins/jquery-slimscroll/jquery.slimscroll.min.js?body=1" for 127.0.0.1 at 2015-08-20 23:49:34 +0200
+
+
+Started GET "/assets/global/plugins/angularjs/angular.min.js?body=1" for 127.0.0.1 at 2015-08-20 23:49:34 +0200
+
+
+Started GET "/assets/global/plugins/angularjs/plugins/ocLazyLoad.min.js?body=1" for 127.0.0.1 at 2015-08-20 23:49:34 +0200
+
+
+Started GET "/assets/global/scripts/metronic.js?body=1" for 127.0.0.1 at 2015-08-20 23:49:34 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-08-20 23:49:34 +0200
+
+
+Started GET "/assets/app.js?body=1" for 127.0.0.1 at 2015-08-20 23:49:34 +0200
+
+
+Started GET "/assets/global/plugins/jquery.cokie.min.js?body=1" for 127.0.0.1 at 2015-08-20 23:49:34 +0200
+
+
+Started GET "/assets/global/plugins/bootstrap/js/bootstrap.min.js?body=1" for 127.0.0.1 at 2015-08-20 23:49:34 +0200
+
+
+Started GET "/assets/admin/layout/scripts/demo.js?body=1" for 127.0.0.1 at 2015-08-20 23:49:34 +0200
+
+
+Started GET "/assets/global/plugins/angularjs/angular-touch.min.js?body=1" for 127.0.0.1 at 2015-08-20 23:49:34 +0200
+
+
+Started GET "/assets/admin/layout/img/logo.png" for 127.0.0.1 at 2015-08-20 23:49:34 +0200
+
+
+Started GET "/assets/admin/layout/img/avatar/jonasbarsten.jpg" for 127.0.0.1 at 2015-08-20 23:49:34 +0200
+
+
+Started GET "/assets/admin/layout/img/avatar/anitawisloff.jpg" for 127.0.0.1 at 2015-08-20 23:49:34 +0200
+
+
+Started GET "/assets/admin/pages/css/tasks.css" for 127.0.0.1 at 2015-08-20 23:49:34 +0200
+
+
+Started GET "/assets/global/plugins/morris/morris.min.js" for 127.0.0.1 at 2015-08-20 23:49:34 +0200
+
+
+Started GET "/assets/global/plugins/morris/morris.css" for 127.0.0.1 at 2015-08-20 23:49:34 +0200
+
+
+Started GET "/assets/global/plugins/morris/raphael-min.js" for 127.0.0.1 at 2015-08-20 23:49:34 +0200
+
+
+Started GET "/assets/admin/pages/scripts/tasks.js" for 127.0.0.1 at 2015-08-20 23:49:34 +0200
+
+
+Started GET "/assets/global/plugins/jquery.sparkline.min.js" for 127.0.0.1 at 2015-08-20 23:49:34 +0200
+
+
+Started GET "/assets/controllers/DashboardController.js" for 127.0.0.1 at 2015-08-20 23:49:34 +0200
+
+
+Started GET "/assets/admin/pages/scripts/index3.js" for 127.0.0.1 at 2015-08-20 23:49:34 +0200
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-20 23:50:40 +0200
+  [1m[36mUser Load (0.9ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 2 ORDER BY "users"."id" ASC LIMIT 1[0m
+Processing by SoulcontrolController#index as HTML
+  Rendered soulcontrol/tpl/_header.html.erb (1.1ms)
+  Rendered soulcontrol/tpl/_sidebar.html.erb (0.1ms)
+  Rendered soulcontrol/index.html.erb within layouts/application (17.2ms)
+Completed 200 OK in 33ms (Views: 32.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-08-20 23:50:41 +0200
+
+
+Started GET "/assets/areas.css?body=1" for 127.0.0.1 at 2015-08-20 23:50:41 +0200
+
+
+Started GET "/assets/countries.css?body=1" for 127.0.0.1 at 2015-08-20 23:50:41 +0200
+
+
+Started GET "/assets/event_user_statuses.css?body=1" for 127.0.0.1 at 2015-08-20 23:50:41 +0200
+
+
+Started GET "/assets/companies.css?body=1" for 127.0.0.1 at 2015-08-20 23:50:41 +0200
+
+
+Started GET "/assets/artists.css?body=1" for 127.0.0.1 at 2015-08-20 23:50:41 +0200
+
+
+Started GET "/assets/roles.css?body=1" for 127.0.0.1 at 2015-08-20 23:50:41 +0200
+
+
+Started GET "/assets/events.css?body=1" for 127.0.0.1 at 2015-08-20 23:50:41 +0200
+
+
+Started GET "/assets/statuses.css?body=1" for 127.0.0.1 at 2015-08-20 23:50:41 +0200
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-08-20 23:50:41 +0200
+
+
+Started GET "/assets/venue_users.css?body=1" for 127.0.0.1 at 2015-08-20 23:50:41 +0200
+
+
+Started GET "/assets/global/plugins/font-awesome/css/font-awesome.min.css?body=1" for 127.0.0.1 at 2015-08-20 23:50:41 +0200
+
+
+Started GET "/assets/global/css/components-md.css?body=1" for 127.0.0.1 at 2015-08-20 23:50:41 +0200
+
+
+Started GET "/assets/global/plugins/bootstrap/css/bootstrap.min.css?body=1" for 127.0.0.1 at 2015-08-20 23:50:41 +0200
+
+
+Started GET "/assets/admin/layout/css/layout.css?body=1" for 127.0.0.1 at 2015-08-20 23:50:41 +0200
+
+
+Started GET "/assets/admin/layout/css/custom.css?body=1" for 127.0.0.1 at 2015-08-20 23:50:41 +0200
+
+
+Started GET "/assets/locations.css?body=1" for 127.0.0.1 at 2015-08-20 23:50:41 +0200
+
+
+Started GET "/assets/tours.css?body=1" for 127.0.0.1 at 2015-08-20 23:50:41 +0200
+
+
+Started GET "/assets/global/plugins/uniform/css/uniform.default.css?body=1" for 127.0.0.1 at 2015-08-20 23:50:41 +0200
+
+
+Started GET "/assets/venues.css?body=1" for 127.0.0.1 at 2015-08-20 23:50:41 +0200
+
+
+Started GET "/assets/admin/layout/css/themes/light.css?body=1" for 127.0.0.1 at 2015-08-20 23:50:41 +0200
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-08-20 23:50:41 +0200
+
+
+Started GET "/assets/global/plugins/simple-line-icons/simple-line-icons.min.css?body=1" for 127.0.0.1 at 2015-08-20 23:50:41 +0200
+
+
+Started GET "/assets/admin/pages/css/login2.css?body=1" for 127.0.0.1 at 2015-08-20 23:50:41 +0200
+
+
+Started GET "/assets/global/css/plugins-md.css?body=1" for 127.0.0.1 at 2015-08-20 23:50:41 +0200
+
+
+Started GET "/assets/venue_roles.css?body=1" for 127.0.0.1 at 2015-08-20 23:50:41 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-08-20 23:50:41 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-08-20 23:50:41 +0200
+
+
+Started GET "/assets/global/plugins/bootstrap-hover-dropdown/bootstrap-hover-dropdown.min.js?body=1" for 127.0.0.1 at 2015-08-20 23:50:41 +0200
+
+
+Started GET "/assets/global/plugins/jquery-migrate.min.js?body=1" for 127.0.0.1 at 2015-08-20 23:50:41 +0200
+
+
+Started GET "/assets/global/plugins/jquery.blockui.min.js?body=1" for 127.0.0.1 at 2015-08-20 23:50:41 +0200
+
+
+Started GET "/assets/global/plugins/uniform/jquery.uniform.min.js?body=1" for 127.0.0.1 at 2015-08-20 23:50:41 +0200
+
+
+Started GET "/assets/global/plugins/angularjs/angular-sanitize.min.js?body=1" for 127.0.0.1 at 2015-08-20 23:50:41 +0200
+
+
+Started GET "/assets/global/plugins/angularjs/plugins/angular-ui-router.min.js?body=1" for 127.0.0.1 at 2015-08-20 23:50:41 +0200
+
+
+Started GET "/assets/global/plugins/angularjs/plugins/ui-bootstrap-tpls.min.js?body=1" for 127.0.0.1 at 2015-08-20 23:50:41 +0200
+
+
+Started GET "/assets/directives.js?body=1" for 127.0.0.1 at 2015-08-20 23:50:41 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-08-20 23:50:41 +0200
+
+
+Started GET "/assets/admin/layout/scripts/layout.js?body=1" for 127.0.0.1 at 2015-08-20 23:50:41 +0200
+
+
+Started GET "/assets/global/plugins/jquery.min.js?body=1" for 127.0.0.1 at 2015-08-20 23:50:41 +0200
+
+
+Started GET "/assets/global/plugins/angularjs/angular.min.js?body=1" for 127.0.0.1 at 2015-08-20 23:50:41 +0200
+
+
+Started GET "/assets/global/plugins/angularjs/plugins/ocLazyLoad.min.js?body=1" for 127.0.0.1 at 2015-08-20 23:50:41 +0200
+
+
+Started GET "/assets/global/plugins/jquery-slimscroll/jquery.slimscroll.min.js?body=1" for 127.0.0.1 at 2015-08-20 23:50:41 +0200
+
+
+Started GET "/assets/global/scripts/metronic.js?body=1" for 127.0.0.1 at 2015-08-20 23:50:41 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-08-20 23:50:41 +0200
+
+
+Started GET "/assets/app.js?body=1" for 127.0.0.1 at 2015-08-20 23:50:41 +0200
+
+
+Started GET "/assets/global/plugins/jquery.cokie.min.js?body=1" for 127.0.0.1 at 2015-08-20 23:50:41 +0200
+
+
+Started GET "/assets/admin/layout/scripts/demo.js?body=1" for 127.0.0.1 at 2015-08-20 23:50:41 +0200
+
+
+Started GET "/assets/global/plugins/bootstrap/js/bootstrap.min.js?body=1" for 127.0.0.1 at 2015-08-20 23:50:41 +0200
+
+
+Started GET "/assets/global/plugins/angularjs/angular-touch.min.js?body=1" for 127.0.0.1 at 2015-08-20 23:50:41 +0200
+
+
+Started GET "/assets/admin/layout/img/logo.png" for 127.0.0.1 at 2015-08-20 23:50:41 +0200
+
+
+Started GET "/assets/admin/layout/img/avatar/anitawisloff.jpg" for 127.0.0.1 at 2015-08-20 23:50:41 +0200
+
+
+Started GET "/assets/admin/pages/css/tasks.css" for 127.0.0.1 at 2015-08-20 23:50:41 +0200
+
+
+Started GET "/assets/global/plugins/morris/morris.css" for 127.0.0.1 at 2015-08-20 23:50:41 +0200
+
+
+Started GET "/assets/global/plugins/morris/raphael-min.js" for 127.0.0.1 at 2015-08-20 23:50:41 +0200
+
+
+Started GET "/assets/global/plugins/morris/morris.min.js" for 127.0.0.1 at 2015-08-20 23:50:41 +0200
+
+
+Started GET "/assets/global/plugins/jquery.sparkline.min.js" for 127.0.0.1 at 2015-08-20 23:50:41 +0200
+
+
+Started GET "/assets/admin/pages/scripts/index3.js" for 127.0.0.1 at 2015-08-20 23:50:41 +0200
+
+
+Started GET "/assets/admin/pages/scripts/tasks.js" for 127.0.0.1 at 2015-08-20 23:50:41 +0200
+
+
+Started GET "/assets/controllers/DashboardController.js" for 127.0.0.1 at 2015-08-20 23:50:41 +0200
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-20 23:50:48 +0200
+  [1m[35mUser Load (0.9ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 2 ORDER BY "users"."id" ASC LIMIT 1
+Processing by SoulcontrolController#index as HTML
+  Rendered soulcontrol/tpl/_header.html.erb (0.5ms)
+  Rendered soulcontrol/tpl/_sidebar.html.erb (0.0ms)
+  Rendered soulcontrol/index.html.erb within layouts/application (69.3ms)
+Completed 200 OK in 86ms (Views: 85.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-08-20 23:50:48 +0200
+
+
+Started GET "/assets/artists.css?body=1" for 127.0.0.1 at 2015-08-20 23:50:48 +0200
+
+
+Started GET "/assets/companies.css?body=1" for 127.0.0.1 at 2015-08-20 23:50:48 +0200
+
+
+Started GET "/assets/areas.css?body=1" for 127.0.0.1 at 2015-08-20 23:50:48 +0200
+
+
+Started GET "/assets/countries.css?body=1" for 127.0.0.1 at 2015-08-20 23:50:48 +0200
+
+
+Started GET "/assets/event_user_statuses.css?body=1" for 127.0.0.1 at 2015-08-20 23:50:48 +0200
+
+
+Started GET "/assets/events.css?body=1" for 127.0.0.1 at 2015-08-20 23:50:48 +0200
+
+
+Started GET "/assets/roles.css?body=1" for 127.0.0.1 at 2015-08-20 23:50:48 +0200
+
+
+Started GET "/assets/statuses.css?body=1" for 127.0.0.1 at 2015-08-20 23:50:48 +0200
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-08-20 23:50:48 +0200
+
+
+Started GET "/assets/venue_users.css?body=1" for 127.0.0.1 at 2015-08-20 23:50:48 +0200
+
+
+Started GET "/assets/global/plugins/font-awesome/css/font-awesome.min.css?body=1" for 127.0.0.1 at 2015-08-20 23:50:48 +0200
+
+
+Started GET "/assets/global/plugins/bootstrap/css/bootstrap.min.css?body=1" for 127.0.0.1 at 2015-08-20 23:50:48 +0200
+
+
+Started GET "/assets/global/css/components-md.css?body=1" for 127.0.0.1 at 2015-08-20 23:50:48 +0200
+
+
+Started GET "/assets/admin/layout/css/custom.css?body=1" for 127.0.0.1 at 2015-08-20 23:50:48 +0200
+
+
+Started GET "/assets/locations.css?body=1" for 127.0.0.1 at 2015-08-20 23:50:48 +0200
+
+
+Started GET "/assets/admin/layout/css/layout.css?body=1" for 127.0.0.1 at 2015-08-20 23:50:48 +0200
+
+
+Started GET "/assets/tours.css?body=1" for 127.0.0.1 at 2015-08-20 23:50:48 +0200
+
+
+Started GET "/assets/venues.css?body=1" for 127.0.0.1 at 2015-08-20 23:50:48 +0200
+
+
+Started GET "/assets/admin/layout/css/themes/light.css?body=1" for 127.0.0.1 at 2015-08-20 23:50:48 +0200
+
+
+Started GET "/assets/global/plugins/uniform/css/uniform.default.css?body=1" for 127.0.0.1 at 2015-08-20 23:50:48 +0200
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-08-20 23:50:48 +0200
+
+
+Started GET "/assets/global/plugins/simple-line-icons/simple-line-icons.min.css?body=1" for 127.0.0.1 at 2015-08-20 23:50:49 +0200
+
+
+Started GET "/assets/admin/pages/css/login2.css?body=1" for 127.0.0.1 at 2015-08-20 23:50:49 +0200
+
+
+Started GET "/assets/global/css/plugins-md.css?body=1" for 127.0.0.1 at 2015-08-20 23:50:49 +0200
+
+
+Started GET "/assets/venue_roles.css?body=1" for 127.0.0.1 at 2015-08-20 23:50:49 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-08-20 23:50:49 +0200
+
+
+Started GET "/assets/global/plugins/jquery-migrate.min.js?body=1" for 127.0.0.1 at 2015-08-20 23:50:49 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-08-20 23:50:49 +0200
+
+
+Started GET "/assets/global/plugins/bootstrap-hover-dropdown/bootstrap-hover-dropdown.min.js?body=1" for 127.0.0.1 at 2015-08-20 23:50:49 +0200
+
+
+Started GET "/assets/global/plugins/jquery.blockui.min.js?body=1" for 127.0.0.1 at 2015-08-20 23:50:49 +0200
+
+
+Started GET "/assets/global/plugins/uniform/jquery.uniform.min.js?body=1" for 127.0.0.1 at 2015-08-20 23:50:49 +0200
+
+
+Started GET "/assets/global/plugins/angularjs/plugins/angular-ui-router.min.js?body=1" for 127.0.0.1 at 2015-08-20 23:50:49 +0200
+
+
+Started GET "/assets/directives.js?body=1" for 127.0.0.1 at 2015-08-20 23:50:49 +0200
+
+
+Started GET "/assets/global/plugins/angularjs/angular-sanitize.min.js?body=1" for 127.0.0.1 at 2015-08-20 23:50:49 +0200
+
+
+Started GET "/assets/global/plugins/angularjs/plugins/ui-bootstrap-tpls.min.js?body=1" for 127.0.0.1 at 2015-08-20 23:50:49 +0200
+
+
+Started GET "/assets/admin/layout/scripts/layout.js?body=1" for 127.0.0.1 at 2015-08-20 23:50:49 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-08-20 23:50:49 +0200
+
+
+Started GET "/assets/global/plugins/jquery-slimscroll/jquery.slimscroll.min.js?body=1" for 127.0.0.1 at 2015-08-20 23:50:49 +0200
+
+
+Started GET "/assets/global/plugins/angularjs/angular.min.js?body=1" for 127.0.0.1 at 2015-08-20 23:50:49 +0200
+
+
+Started GET "/assets/global/plugins/jquery.min.js?body=1" for 127.0.0.1 at 2015-08-20 23:50:49 +0200
+
+
+Started GET "/assets/global/plugins/angularjs/plugins/ocLazyLoad.min.js?body=1" for 127.0.0.1 at 2015-08-20 23:50:49 +0200
+
+
+Started GET "/assets/global/scripts/metronic.js?body=1" for 127.0.0.1 at 2015-08-20 23:50:49 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-08-20 23:50:49 +0200
+
+
+Started GET "/assets/global/plugins/jquery.cokie.min.js?body=1" for 127.0.0.1 at 2015-08-20 23:50:49 +0200
+
+
+Started GET "/assets/app.js?body=1" for 127.0.0.1 at 2015-08-20 23:50:49 +0200
+
+
+Started GET "/assets/global/plugins/bootstrap/js/bootstrap.min.js?body=1" for 127.0.0.1 at 2015-08-20 23:50:49 +0200
+
+
+Started GET "/assets/admin/layout/scripts/demo.js?body=1" for 127.0.0.1 at 2015-08-20 23:50:49 +0200
+
+
+Started GET "/assets/global/plugins/angularjs/angular-touch.min.js?body=1" for 127.0.0.1 at 2015-08-20 23:50:49 +0200
+
+
+Started GET "/assets/admin/layout/img/avatar/anitawisloff.jpg" for 127.0.0.1 at 2015-08-20 23:50:49 +0200
+
+
+Started GET "/assets/admin/layout/img/logo.png" for 127.0.0.1 at 2015-08-20 23:50:49 +0200
+
+
+Started GET "/assets/admin/pages/css/tasks.css" for 127.0.0.1 at 2015-08-20 23:50:49 +0200
+
+
+Started GET "/assets/global/plugins/morris/morris.css" for 127.0.0.1 at 2015-08-20 23:50:49 +0200
+
+
+Started GET "/assets/global/plugins/morris/morris.min.js" for 127.0.0.1 at 2015-08-20 23:50:49 +0200
+
+
+Started GET "/assets/global/plugins/jquery.sparkline.min.js" for 127.0.0.1 at 2015-08-20 23:50:49 +0200
+
+
+Started GET "/assets/global/plugins/morris/raphael-min.js" for 127.0.0.1 at 2015-08-20 23:50:49 +0200
+
+
+Started GET "/assets/admin/pages/scripts/index3.js" for 127.0.0.1 at 2015-08-20 23:50:49 +0200
+
+
+Started GET "/assets/admin/pages/scripts/tasks.js" for 127.0.0.1 at 2015-08-20 23:50:49 +0200
+
+
+Started GET "/assets/controllers/DashboardController.js" for 127.0.0.1 at 2015-08-20 23:50:49 +0200
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-20 23:50:50 +0200
+  [1m[36mUser Load (0.9ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 2 ORDER BY "users"."id" ASC LIMIT 1[0m
+Processing by SoulcontrolController#index as HTML
+  Rendered soulcontrol/tpl/_header.html.erb (0.4ms)
+  Rendered soulcontrol/tpl/_sidebar.html.erb (0.1ms)
+  Rendered soulcontrol/index.html.erb within layouts/application (14.5ms)
+Completed 200 OK in 79ms (Views: 78.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/areas.css?body=1" for 127.0.0.1 at 2015-08-20 23:50:50 +0200
+
+
+Started GET "/assets/artists.css?body=1" for 127.0.0.1 at 2015-08-20 23:50:50 +0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-08-20 23:50:50 +0200
+
+
+Started GET "/assets/companies.css?body=1" for 127.0.0.1 at 2015-08-20 23:50:50 +0200
+
+
+Started GET "/assets/countries.css?body=1" for 127.0.0.1 at 2015-08-20 23:50:50 +0200
+
+
+Started GET "/assets/event_user_statuses.css?body=1" for 127.0.0.1 at 2015-08-20 23:50:50 +0200
+
+
+Started GET "/assets/events.css?body=1" for 127.0.0.1 at 2015-08-20 23:50:50 +0200
+
+
+Started GET "/assets/roles.css?body=1" for 127.0.0.1 at 2015-08-20 23:50:50 +0200
+
+
+Started GET "/assets/statuses.css?body=1" for 127.0.0.1 at 2015-08-20 23:50:50 +0200
+
+
+Started GET "/assets/tours.css?body=1" for 127.0.0.1 at 2015-08-20 23:50:50 +0200
+
+
+Started GET "/assets/venue_users.css?body=1" for 127.0.0.1 at 2015-08-20 23:50:50 +0200
+
+
+Started GET "/assets/global/plugins/font-awesome/css/font-awesome.min.css?body=1" for 127.0.0.1 at 2015-08-20 23:50:50 +0200
+
+
+Started GET "/assets/global/plugins/bootstrap/css/bootstrap.min.css?body=1" for 127.0.0.1 at 2015-08-20 23:50:50 +0200
+
+
+Started GET "/assets/global/css/components-md.css?body=1" for 127.0.0.1 at 2015-08-20 23:50:50 +0200
+
+
+Started GET "/assets/admin/layout/css/layout.css?body=1" for 127.0.0.1 at 2015-08-20 23:50:50 +0200
+
+
+Started GET "/assets/locations.css?body=1" for 127.0.0.1 at 2015-08-20 23:50:50 +0200
+
+
+Started GET "/assets/admin/layout/css/custom.css?body=1" for 127.0.0.1 at 2015-08-20 23:50:50 +0200
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-08-20 23:50:50 +0200
+
+
+Started GET "/assets/venues.css?body=1" for 127.0.0.1 at 2015-08-20 23:50:50 +0200
+
+
+Started GET "/assets/global/plugins/uniform/css/uniform.default.css?body=1" for 127.0.0.1 at 2015-08-20 23:50:50 +0200
+
+
+Started GET "/assets/admin/layout/css/themes/light.css?body=1" for 127.0.0.1 at 2015-08-20 23:50:50 +0200
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-08-20 23:50:50 +0200
+
+
+Started GET "/assets/global/plugins/simple-line-icons/simple-line-icons.min.css?body=1" for 127.0.0.1 at 2015-08-20 23:50:50 +0200
+
+
+Started GET "/assets/admin/pages/css/login2.css?body=1" for 127.0.0.1 at 2015-08-20 23:50:50 +0200
+
+
+Started GET "/assets/global/css/plugins-md.css?body=1" for 127.0.0.1 at 2015-08-20 23:50:50 +0200
+
+
+Started GET "/assets/venue_roles.css?body=1" for 127.0.0.1 at 2015-08-20 23:50:50 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-08-20 23:50:50 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-08-20 23:50:50 +0200
+
+
+Started GET "/assets/global/plugins/jquery-migrate.min.js?body=1" for 127.0.0.1 at 2015-08-20 23:50:50 +0200
+
+
+Started GET "/assets/global/plugins/jquery-slimscroll/jquery.slimscroll.min.js?body=1" for 127.0.0.1 at 2015-08-20 23:50:50 +0200
+
+
+Started GET "/assets/global/plugins/uniform/jquery.uniform.min.js?body=1" for 127.0.0.1 at 2015-08-20 23:50:50 +0200
+
+
+Started GET "/assets/global/plugins/jquery.blockui.min.js?body=1" for 127.0.0.1 at 2015-08-20 23:50:50 +0200
+
+
+Started GET "/assets/global/plugins/angularjs/angular-sanitize.min.js?body=1" for 127.0.0.1 at 2015-08-20 23:50:50 +0200
+
+
+Started GET "/assets/directives.js?body=1" for 127.0.0.1 at 2015-08-20 23:50:50 +0200
+
+
+Started GET "/assets/global/plugins/angularjs/plugins/ui-bootstrap-tpls.min.js?body=1" for 127.0.0.1 at 2015-08-20 23:50:50 +0200
+
+
+Started GET "/assets/global/plugins/angularjs/plugins/angular-ui-router.min.js?body=1" for 127.0.0.1 at 2015-08-20 23:50:50 +0200
+
+
+Started GET "/assets/admin/layout/scripts/layout.js?body=1" for 127.0.0.1 at 2015-08-20 23:50:50 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-08-20 23:50:50 +0200
+
+
+Started GET "/assets/global/plugins/angularjs/angular.min.js?body=1" for 127.0.0.1 at 2015-08-20 23:50:50 +0200
+
+
+Started GET "/assets/global/plugins/bootstrap-hover-dropdown/bootstrap-hover-dropdown.min.js?body=1" for 127.0.0.1 at 2015-08-20 23:50:50 +0200
+
+
+Started GET "/assets/global/plugins/angularjs/plugins/ocLazyLoad.min.js?body=1" for 127.0.0.1 at 2015-08-20 23:50:50 +0200
+
+
+Started GET "/assets/global/plugins/jquery.min.js?body=1" for 127.0.0.1 at 2015-08-20 23:50:50 +0200
+
+
+Started GET "/assets/global/scripts/metronic.js?body=1" for 127.0.0.1 at 2015-08-20 23:50:51 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-08-20 23:50:51 +0200
+
+
+Started GET "/assets/global/plugins/jquery.cokie.min.js?body=1" for 127.0.0.1 at 2015-08-20 23:50:51 +0200
+
+
+Started GET "/assets/admin/layout/scripts/demo.js?body=1" for 127.0.0.1 at 2015-08-20 23:50:51 +0200
+
+
+Started GET "/assets/app.js?body=1" for 127.0.0.1 at 2015-08-20 23:50:51 +0200
+
+
+Started GET "/assets/global/plugins/bootstrap/js/bootstrap.min.js?body=1" for 127.0.0.1 at 2015-08-20 23:50:51 +0200
+
+
+Started GET "/assets/global/plugins/angularjs/angular-touch.min.js?body=1" for 127.0.0.1 at 2015-08-20 23:50:51 +0200
+
+
+Started GET "/assets/admin/layout/img/avatar/anitawisloff.jpg" for 127.0.0.1 at 2015-08-20 23:50:51 +0200
+
+
+Started GET "/assets/admin/layout/img/logo.png" for 127.0.0.1 at 2015-08-20 23:50:51 +0200
+
+
+Started GET "/assets/global/plugins/morris/morris.css" for 127.0.0.1 at 2015-08-20 23:50:51 +0200
+
+
+Started GET "/assets/admin/pages/css/tasks.css" for 127.0.0.1 at 2015-08-20 23:50:51 +0200
+
+
+Started GET "/assets/global/plugins/morris/morris.min.js" for 127.0.0.1 at 2015-08-20 23:50:51 +0200
+
+
+Started GET "/assets/global/plugins/morris/raphael-min.js" for 127.0.0.1 at 2015-08-20 23:50:51 +0200
+
+
+Started GET "/assets/admin/pages/scripts/index3.js" for 127.0.0.1 at 2015-08-20 23:50:51 +0200
+
+
+Started GET "/assets/global/plugins/jquery.sparkline.min.js" for 127.0.0.1 at 2015-08-20 23:50:51 +0200
+
+
+Started GET "/assets/admin/pages/scripts/tasks.js" for 127.0.0.1 at 2015-08-20 23:50:51 +0200
+
+
+Started GET "/assets/controllers/DashboardController.js" for 127.0.0.1 at 2015-08-20 23:50:51 +0200
