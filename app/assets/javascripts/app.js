@@ -7,7 +7,7 @@ var MetronicApp = angular.module("MetronicApp", [
     "ui.router",
     "ui.bootstrap",
     "oc.lazyLoad",
-    "ngSanitize"
+    "ngSanitize",
 ]);
 
 /* Configure ocLazyLoader(refer: https://github.com/ocombe/ocLazyLoad) */
@@ -87,7 +87,7 @@ MetronicApp.factory('settings', ['$rootScope', function($rootScope) {
 MetronicApp.controller('AppController', ['$scope', '$rootScope', function($scope, $rootScope) {
     $scope.$on('$viewContentLoaded', function() {
         Metronic.initComponents(); // init core components
-        //Layout.init(); //  Init entire layout(header, footer, sidebar, etc) on page load if the partials included in server side instead of loading with ng-include directive
+       // Layout.init(); //  Init entire layout(header, footer, sidebar, etc) on page load if the partials included in server side instead of loading with ng-include directive
     });
 }]);
 
@@ -98,8 +98,10 @@ initialization can be disabled and Layout.init() should be called on page load c
 ***/
 
 /* Setup Layout Part - Header */
-MetronicApp.controller('HeaderController', ['$scope', function($scope) {
+MetronicApp.controller('HeaderController', ['$scope', 'soulcontrolRails', function($scope, soulcontrol) {
     $scope.$on('$includeContentLoaded', function() {
+        $scope.signoutLink = soulcontrol.signoutLink;
+        $scope.currentUser = soulcontrol.currentUser;
         Layout.initHeader(); // init header
     });
 }]);
@@ -114,7 +116,7 @@ MetronicApp.controller('SidebarController', ['$scope', function($scope) {
 /* Setup Layout Part - Sidebar */
 MetronicApp.controller('PageHeadController', ['$scope', function($scope) {
     $scope.$on('$includeContentLoaded', function() {
-        Demo.init(); // init theme panel
+           Demo.init(); // init theme panel
     });
 }]);
 
