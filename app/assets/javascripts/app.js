@@ -84,9 +84,10 @@ MetronicApp.factory('settings', ['$rootScope', function($rootScope) {
 }]);
 
 /* Setup App Main Controller */
-MetronicApp.controller('AppController', ['$scope', '$rootScope', function($scope, $rootScope) {
+MetronicApp.controller('AppController', ['$scope', 'soulcontrolRails', '$rootScope', function($scope, $rootScope, soulcontrol) {
     $scope.$on('$viewContentLoaded', function() {
         Metronic.initComponents(); // init core components
+        $scope.soulcontrol = soulcontrol;
        // Layout.init(); //  Init entire layout(header, footer, sidebar, etc) on page load if the partials included in server side instead of loading with ng-include directive
     });
 }]);
@@ -100,23 +101,24 @@ initialization can be disabled and Layout.init() should be called on page load c
 /* Setup Layout Part - Header */
 MetronicApp.controller('HeaderController', ['$scope', 'soulcontrolRails', function($scope, soulcontrol) {
     $scope.$on('$includeContentLoaded', function() {
-        $scope.signoutLink = soulcontrol.signoutLink;
-        $scope.currentUser = soulcontrol.currentUser;
+        $scope.soulcontrol = soulcontrol;
         Layout.initHeader(); // init header
     });
 }]);
 
 /* Setup Layout Part - Sidebar */
-MetronicApp.controller('SidebarController', ['$scope', function($scope) {
+MetronicApp.controller('SidebarController', ['$scope', 'soulcontrolRails', function($scope, soulcontrol) {
     $scope.$on('$includeContentLoaded', function() {
+        $scope.soulcontrol = soulcontrol;
         Layout.initSidebar(); // init sidebar
     });
 }]);
 
 /* Setup Layout Part - Sidebar */
-MetronicApp.controller('PageHeadController', ['$scope', function($scope) {
+MetronicApp.controller('PageHeadController', ['$scope', 'soulcontrolRails', function($scope, soulcontrol) {
     $scope.$on('$includeContentLoaded', function() {
-           Demo.init(); // init theme panel
+        $scope.soulcontrol = soulcontrol;
+        Demo.init(); // init theme panel
     });
 }]);
 

@@ -15,34 +15,20 @@
 		</li>
 		<li>
 			<a href="javascript:;">
-			<i class="icon-user"></i>
-			<span class="title">My Artists</span>
-			<span class="arrow "></span>
+				<i class="icon-user"></i>
+				<span class="title">My Artists</span>
+				<span class="arrow "></span>
 			</a>
 			<ul class="sub-menu">
 				<li>
-					<a href="#artists/new">
-						<i></i>New Artist</span>
+					<a href="artists/new">
+						<i class="glyphicon glyphicon-plus"></i>New Artist</i></i>
 					</a>
 				</li>
-				<li>
-					<a href="#artist.html">
-					<i></i>Atlanter</span>
-					</a>
-				</li>
-				<li>
-					<a href="#artist.html">
-					<i></i>Nils Bech</span>
-					</a>
-				</li>
-				<li>
-					<a href="#artist.html">
-					<i></i>Fay Wildhagen</span>
-					</a>
-				</li>
-				<li>
-					<a href="#artist.html">
-					<i></i>Away</span>
+                <hr>
+				<li ng-repeat="artist in soulcontrol.allArtists">
+					<a href='artists/{{ artist.id }}'>
+					    <i></i>{{artist.name}}</span>
 					</a>
 				</li>
 			</ul>

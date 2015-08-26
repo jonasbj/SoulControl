@@ -21,3 +21,7 @@ Rounded Portlets
 .page-header.navbar .page-logo .logo-default {
 	margin-top: 19px;
 }
+
+.page-sidebar-menu hr {
+	margin: 8px 0;
+}
