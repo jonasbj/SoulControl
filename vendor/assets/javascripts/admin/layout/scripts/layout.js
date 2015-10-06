@@ -456,7 +456,11 @@ var Layout = function() {
         },
 
         initMyWorksheet: function() {
-            alert('HEEEI');
+           return;
+        },
+
+        initNewArtist: function(){
+           return;
         },
 
         init: function () {            
@@ -464,6 +468,7 @@ var Layout = function() {
             this.initSidebar();
             this.initContent();
             this.initFooter();
+
         },
 
         //public function to fix the sidebar and content height accordingly

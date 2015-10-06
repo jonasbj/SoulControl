@@ -131,8 +131,16 @@ MetronicApp.controller('FooterController', ['$scope', function($scope) {
 
 /* Setup Layout Part - My Worksheet */
 MetronicApp.controller('MyWorksheetController', ['$scope', function($scope) {
-    $scope.$on('$includeContentLoaded', function() {
+    $scope.$on('$viewContentLoaded', function() {
         Layout.initMyWorksheet(); // init footer
+    });
+}]);
+
+/* Setup Layout Part - My Worksheet */
+MetronicApp.controller('NewArtistController', ['$scope','soulcontrolRails', function($scope, soulcontrol) {
+    $scope.$on('$viewContentLoaded', function() {
+        $scope.soulcontrol = soulcontrol;
+        Layout.initNewArtist(); // init footer
     });
 }]);
 
@@ -505,7 +513,7 @@ MetronicApp.config(['$stateProvider', '$urlRouterProvider', function($stateProvi
             url: "/my_worksheet.html",
             templateUrl: "views/my_worksheet.html",
             data: {pageTitle: 'My Worksheet', pageSubTitle: 'Get to work you lazy bum!'},
-            controller: "GeneralPageController",
+            controller: "MyWork",
             resolve: {
                 deps: ['$ocLazyLoad', function($ocLazyLoad) {
                     return $ocLazyLoad.load({
@@ -535,7 +543,7 @@ MetronicApp.config(['$stateProvider', '$urlRouterProvider', function($stateProvi
             url: "/shared_worksheet.html",
             templateUrl: "views/shared_worksheet.html",
             data: {pageTitle: 'Shared Worksheet', pageSubTitle: 'Get an overview!'},
-            controller: "GeneralPageController",
+            controller: "MyWorksheetController",
             resolve: {
                 deps: ['$ocLazyLoad', function($ocLazyLoad) {
                     return $ocLazyLoad.load({
@@ -583,13 +591,12 @@ MetronicApp.config(['$stateProvider', '$urlRouterProvider', function($stateProvi
             }
         })
 
-
         // Artist New
-        .state("artist_new", {
-            url: "/artists/new.html",
-            templateUrl: "views/new.html",
-            data: {pageTitle: 'NEW Fucking Artist', pageSubTitle: 'artist fisk'},
-            controller: "GeneralPageController",
+        .state("new_artist", {
+            url: "/new_artist.html",
+            templateUrl: "views/new_artist.html",
+            data: {pageTitle: '', pageSubTitle: ''},
+            controller: "NewArtistController",
             resolve: {
                 deps: ['$ocLazyLoad', function($ocLazyLoad) {
                     return $ocLazyLoad.load({
@@ -599,8 +606,6 @@ MetronicApp.config(['$stateProvider', '$urlRouterProvider', function($stateProvi
                             'assets/global/plugins/bootstrap-fileinput/bootstrap-fileinput.css',
                             'assets/admin/pages/css/profile.css',
                             'assets/admin/pages/css/tasks.css'
-
-
                         ]
                     });
                 }]

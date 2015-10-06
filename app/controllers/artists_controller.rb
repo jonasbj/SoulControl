@@ -26,9 +26,11 @@ class ArtistsController < ApplicationController
   # POST /artists.json
   def create
     @artist = Artist.new(artist_params)
+    @user = User.find_by(email: member_params[:email])
 
     respond_to do |format|
       if @artist.save
+        ArtistUser.create(artist_id: @artist.id, user_id: @user.id)
         format.html { redirect_to @artist, notice: 'Artist was successfully created.' }
         format.json { render action: 'show', status: :created, location: @artist }
       else
@@ -72,4 +74,9 @@ class ArtistsController < ApplicationController
     def artist_params
       params[:artist].permit(:name)
     end
+
+    def member_params
+      params[:members].permit(:email)
+    end
+
 end

@@ -1,10 +1,11 @@
 MetronicApp.service('soulcontrolRails', ['$sce',function($sce){
 
     var obj = {
-        currentUser : '<%= current_user.email[/[^@]+/] %>',
-        signoutLink : $sce.trustAsHtml('<%= link_to( raw('<i class="icon-key"></i>Log out'), destroy_user_session_path, :method => :delete) %>'),
-        allArtists : <%= Artist.all.to_json.html_safe %>
-               }
+                currentUser : '<%= current_user.email[/[^@]+/] %>',
+                signoutLink : $sce.trustAsHtml('<%= link_to( raw('<i class="icon-key"></i>Log out'), destroy_user_session_path, :method => :delete) %>'),
+                allArtists : <%= Artist.all.to_json.html_safe %>,
+                authenticitytoken: '<%= form_authenticity_token %>'
+                }
 
     return obj;
 }]);
