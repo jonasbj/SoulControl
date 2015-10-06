@@ -1,0 +1,229 @@
+<!-- BEGIN MAIN CONTENT -->
+<div ng-controller="NewArtistController" class="margin-top-10">
+    <!-- BEGIN PAGE CONTENT-->
+    <div class="row">
+        <div class="col-md-12">
+            <!-- BEGIN SAMPLE FORM PORTLET-->
+            <div class="portlet light">
+                <div class="portlet-title">
+                    <div class="caption font-green-haze">
+                        <i class="icon-user font-green-haze"></i>
+                        <span class="caption-subject bold uppercase"> New artist</span>
+                    </div>
+                </div>
+                <div class="portlet-body form">
+                    <form role="form" accept-charset="UTF-8" action="/artists" class="new_artist" id="new_artist" method="post">
+                        <div class="form-body">
+
+                            <div class="form-group form-md-line-input has-success">
+                                <label class="col-md-2 control-label" for="artist_name">Artist name</label>
+                                <div class="col-md-10">
+                                    <div class="input-icon">
+                                        <input name="utf8" type="hidden" value="✓"><input name="authenticity_token" type="hidden" value="{{soulcontrol.authenticitytoken}}">
+                                        <input id="artist_name" name="artist[name]" type="text" class="form-control input-lg" placeholder="Enter artist name">
+                                        <div class="form-control-focus">
+                                        </div>
+                                        <span class="help-block">The Beatles</span>
+                                        <i class="fa fa-user"></i>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <hr>
+
+                            <div class="form-group form-md-line-input">
+                                <label class="col-sm-2 control-label" for="form_control_1">Members</label>
+                                <div class="col-sm-3">
+                                    <div class="input-icon">
+                                        <input type="text" name="members[email]" class="form-control" placeholder="email address">
+                                        <div class="form-control-focus"></div>
+                                        <span class="help-block">ringo@beatles.com</span>
+                                        <i class="fa fa-envelope"></i>
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-6">
+                                    <div class="md-checkbox-inline">
+                                        <div class="md-checkbox">
+                                            <input type="checkbox" id="checkbox6" name=members[admin] class="md-check">
+                                            <label for="checkbox6">
+                                            <span></span>
+                                            <span class="check"></span>
+                                            <span class="box"></span>
+                                            admin </label>
+                                        </div>
+                                        <div class="md-checkbox">
+                                            <input type="checkbox" id="checkbox7" name=members[canViewEconomy] class="md-check">
+                                            <label for="checkbox7">
+                                            <span></span>
+                                            <span class="check"></span>
+                                            <span class="box"></span>
+                                            can view economy </label>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-1">
+                                    <span class="input-group-btn btn-right">
+                                        <button class="btn green-haze" type="button">Add</button>
+                                    </span>
+                                </div>
+                            </div>
+
+                            <hr>
+
+                            <div class="form-group form-md-line-input">
+                                <label class="control-label col-md-2">Artist image</label>
+                                <div class="col-md-9">
+                                    <div class="fileinput fileinput-new" data-provides="fileinput">
+                                        <div class="fileinput-new thumbnail" style="width: 200px; height: 150px;">
+                                            <img src="http://www.placehold.it/200x150/EFEFEF/AAAAAA&amp;text=no+image" alt=""/>
+                                        </div>
+                                        <div class="fileinput-preview fileinput-exists thumbnail" style="max-width: 200px; max-height: 150px;">
+                                        </div>
+                                        <div>
+                                            <span class="btn default btn-file">
+                                            <span class="fileinput-new">
+                                            Select image </span>
+                                            <span class="fileinput-exists">
+                                            Change </span>
+                                            <input type="file" name="...">
+                                            </span>
+                                            <a href="javascript:;" class="btn red fileinput-exists" data-dismiss="fileinput">
+                                            Remove </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <hr>
+
+                            <div class="form-group form-md-line-input">
+                                <label class="col-md-2 control-label">Country</label>
+                                <div class="col-md-10">
+                                    <div class="input-icon">
+                                        <input type="text" class="form-control" id="typeahead_example_2" placeholder="Current home country"/>
+                                        <div class="form-control-focus"></div>
+                                        <span class="help-block">E.g: USA, Malaysia.</span>
+                                        <i class="fa fa-search"></i>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <hr>
+
+                            <div class="form-group form-md-line-input">
+                                <label class="col-md-2 control-label" for="form_control_1">Website</label>
+                                <div class="col-md-10">
+                                    <div class="input-icon">
+                                        <input type="text" class="form-control" placeholder="Website URL">
+                                        <div class="form-control-focus"></div>
+                                        <span class="help-block">http://www.artist.com</span>
+                                        <i class="fa fa-globe"></i>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form-group form-md-line-input">
+                                <label class="col-md-2 control-label" for="form_control_1">Facebook</label>
+                                <div class="col-md-10">
+                                    <div class="input-icon">
+                                        <input type="text" class="form-control" placeholder="Facebook URL">
+                                        <div class="form-control-focus">
+                                        </div>
+                                        <span class="help-block">http://facebook.com/artist</span>
+                                        <i class="fa fa-facebook"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group form-md-line-input">
+                                <label class="col-md-2 control-label" for="form_control_1">Youtube</label>
+                                <div class="col-md-10">
+                                    <div class="input-icon">
+                                        <input type="text" class="form-control" placeholder="Youtube URL">
+                                        <div class="form-control-focus">
+                                        </div>
+                                        <span class="help-block">http://youtube.com/artist</span>
+                                        <i class="fa fa-youtube"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group form-md-line-input">
+                                <label class="col-md-2 control-label" for="form_control_1">Instagram</label>
+                                <div class="col-md-10">
+                                    <div class="input-icon">
+                                        <input type="text" class="form-control" placeholder="Instagram URL">
+                                        <div class="form-control-focus">
+                                        </div>
+                                        <span class="help-block">http://instagram.com/artist</span>
+                                        <i class="fa fa-instagram"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group form-md-line-input">
+                                <label class="col-md-2 control-label" for="form_control_1">Twitter</label>
+                                <div class="col-md-10">
+                                    <div class="input-icon">
+                                        <input type="text" class="form-control" placeholder="Twitter URL">
+                                        <div class="form-control-focus">
+                                        </div>
+                                        <span class="help-block">http://twitter.com/artist</span>
+                                        <i class="fa fa-twitter"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group form-md-line-input">
+                                <label class="col-md-2 control-label" for="form_control_1">Spotify</label>
+                                <div class="col-md-10">
+                                    <div class="input-icon">
+                                        <input type="text" class="form-control" placeholder="Spotify URL">
+                                        <div class="form-control-focus">
+                                        </div>
+                                        <span class="help-block">http://spotify.com/artist</span>
+                                        <i class="fa fa-spotify"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group form-md-line-input">
+                                <label class="col-md-2 control-label" for="form_control_1">iTunes</label>
+                                <div class="col-md-10">
+                                    <div class="input-icon">
+                                        <input type="text" class="form-control" placeholder="iTunes URL">
+                                        <div class="form-control-focus">
+                                        </div>
+                                        <span class="help-block">http://itunes.com/artist</span>
+                                        <i class="fa fa-music"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="form-group form-md-line-input">
+                                <label class="col-md-2 control-label" for="form_control_1">Bio</label>
+                                <div class="col-md-10">
+                                    <div class="input-icon">
+                                        <textarea class="form-control" rows="3" placeholder="About the artist"></textarea>
+                                        <div class="form-control-focus">
+                                        </div>
+                                        <span class="help-block">Started in 1960, consist of John, Paul, Ringo and that other guy</span>
+                                        <i class="fa fa-book"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-actions margin-top-10">
+                            <div class="row">
+                                <div class="col-md-offset-2 col-md-10">
+                                    <button type="button" class="btn default">Cancel</button>
+                                    <div class="actions">
+                                        <input name="commit" class="btn blue" type="submit" value="Create Artist">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <!-- END SAMPLE FORM PORTLET-->
+        </div>
+    </div>
+</div>
